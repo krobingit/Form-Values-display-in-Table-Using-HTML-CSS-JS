@@ -94,6 +94,7 @@ input[type="text"]:focus,input[type="number"]:focus
   border:1px solid black;
   padding:5px 25px;
   margin:5px;
+    text-align:center;
   
 }
 .uservalues>td{
