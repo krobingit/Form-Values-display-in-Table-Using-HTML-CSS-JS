@@ -32,24 +32,16 @@ document.querySelector("#btnsub").onclick = storeValuesIntoTable = () => {
       return false;
     }
   }
+  
   var checkboxvalues = [];
+  checkboxvalues = Array.from(document.querySelectorAll(".form-check-input:checked")).map((checkbox) => checkbox.value);
+  console.log(checkboxvalues)
 
-
-  var check = document.querySelectorAll(".form-check-input:checked");
-
-
-
-  if (check.length < 2) {
+  if (checkboxvalues.length < 2) {
 
     alert("Must choose 2 options");
     return false;
   }
-
-  for (var i = 0; i < check.length && check.length >= 2; i++)
-    checkboxvalues.push(check[i].value)
-
-
-
 
   document.querySelector("table").innerHTML += `
                                              
