@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="htmlform.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row" id="formrow">
+            <form action="/html form.html" id="favfoodform">
+                <div class="text-center">
+                    <img src="https://static.thenounproject.com/png/25603-200.png" class="rounded" alt="formicon"
+                        id="formIcon">
+
+                    <h1 class="formtitle"><i>Favorite Foods</i></h1>
+                </div>
+
+
+                <div class="col-md-12">
+
+                    <label class="required" for="firstname">Name</label>
+
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="firstname" placeholder="First-Name" required>
+
+                </div>
+
+                <div class="col-md-6">
+                    <input type="text" id="lastname" placeholder="Last-Name" required>
+
+                </div>
+
+                <div class="col-md-12">
+                    <div>
+
+                        <label class="required" for="address">Address</label>
+                    </div>
+                    <input type="text" id="address" placeholder="Enter your address here.." required>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div>
+                        <label class="required" for="pincode">Pincode</label>
+                    </div>
+                    <input type="number" id="pincode" placeholder="Pin-Code" required>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div>
+                        <label class="required" for="country">Country</label>
+                    </div>
+                    <input type="text" id="country" placeholder="Country" required>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div>
+                        <label class="required" for="state">State</label>
+                    </div>
+                    <input type="text" id="state" placeholder="State" required>
+
+                </div>
+
+                <div class="col-md-12">
+                    <div>
+                        <label class="required" for="gender">Gender</label>
+                    </div>
+                    <select class="form-select" aria-label="Default select example" id="gender" required>
+                        <option selected>Select a gender..</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender">Transgender</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <div>
+                        <h1 class="required">Choices of Food you like..</h1>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" value="vegetarian" id="veg">
+                        <label class="form-check-label" for="veg">Vegetarian
+                        </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" value="chicken" id="chicken">
+                        <label class="form-check-label" for="chicken">Chicken
+                        </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" value="pizza" id="pizza">
+                        <label class="form-check-label" for="pizza">Pizza
+                        </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" value="burger" id="burger">
+                        <label class="form-check-label" for="burger">Burger
+                        </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" value="biryani" id="biryani">
+                        <label class="form-check-label" for="biryani">Biryani
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Submit" id="btnsub">
+                </div>
+                <div>
+                    <input class="btn btn-primary" type="reset" value="Reset" id="btreset">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
