@@ -25,10 +25,12 @@ document.querySelector("#btnsub").onclick = storeValuesIntoTable = () => {
 
 
 
-  if ((document.querySelector("#firstname").value === "") || (document.querySelector("#lastname").value === "") || (document.querySelector("#address").value === "") || (document.querySelector("input[type=number]").value === "") || (document.querySelector("#country").value === "") || (document.querySelector("#state").value === "") ||
-    (document.querySelector(".form-select").value === "Select a gender..")) {
-    alert("Please fill up the form fields");
-    return false;
+  for (var i = 0; i < 6; i++) {
+    if ((document.querySelectorAll(".field")[i].value === "") ||
+      (document.querySelector(".form-select").value === "Select a gender..")) {
+      alert("Please fill up the form fields");
+      return false;
+    }
   }
   var checkboxvalues = [];
 
