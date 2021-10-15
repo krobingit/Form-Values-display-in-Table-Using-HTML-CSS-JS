@@ -34,7 +34,7 @@ document.querySelector("#btnsub").onclick = storeValuesIntoTable = () => {
   }
   
   var checkboxvalues = [];
-  checkboxvalues = Array.from(document.querySelectorAll(".form-check-input:checked")).map((checkbox) => checkbox.value);
+  checkboxvalues = Array.from(document.querySelectorAll(".form-check-input:not(:checked)")).map((checkbox) => checkbox.value);
   console.log(checkboxvalues)
 
   if (checkboxvalues.length < 2) {
