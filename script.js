@@ -28,7 +28,7 @@ document.querySelector("#btnsub").onclick = storeValuesIntoTable = () => {
   for (var i = 0; i < 6; i++) {
     if ((document.querySelectorAll(".field")[i].value === "") ||
       (document.querySelector(".form-select").value === "Select a gender..")) {
-      alert("Please fill up the form fields");
+      alert("Please fill up the mandatory form fields");
       return false;
     }
   }
